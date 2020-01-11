@@ -1,0 +1,115 @@
+.calc-wrapper {
+  font-family: Roboto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh
+}
+.calc-wrapper:focus {
+  outline: none;
+}
+.calc {
+  padding: 1rem;
+  max-width: 500px;
+  background-color: #eeeeee;
+  border-radius: 10px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 50px 15px inset #414141;
+}
+.formula,
+.input {
+  height: 2rem;
+  line-height: 2rem;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  overflow: hidden;
+  text-align: right;
+  flex: 1
+}
+.formula {
+  background-color: #f5f5dc;
+  font-family: monospace;
+}
+.input {
+  background-color: #dddddd;
+}
+.btn-grid {
+  height: 350px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  display: grid;
+  grid-template-areas: "ac ac back div" "b-7 b-8 b-9 mul" "b-4 b-5 b-6 sub" "b-1 b-2 b-3 add" "mod b-0 dec eq";
+  flex: 5
+}
+.btn-grid button {
+  font-size: 2rem;
+  font-family: Roboto
+}
+#clear {
+  grid-area: ac
+}
+#backspace {
+  grid-area: back
+}
+#divide {
+  grid-area: div
+}
+#multiply {
+  grid-area: mul
+}
+#seven {
+  grid-area: b-7
+}
+#eight {
+  grid-area: b-8
+}
+#nine {
+  grid-area: b-9
+}
+#subtract {
+  grid-area: sub
+}
+#four {
+  grid-area: b-4
+}
+#five {
+  grid-area: b-5
+}
+#six {
+  grid-area: b-6
+}
+#add {
+  grid-area: add
+}
+#one {
+  grid-area: b-1
+}
+#two {
+  grid-area: b-2
+}
+#three {
+  grid-area: b-3
+}
+#mod {
+  grid-area: mod
+}
+#zero {
+  grid-area: b-0
+}
+#decimal {
+  grid-area: dec
+}
+#equals {
+  grid-area: eq
+}
+
+@media only screen and (max-width: 414px) {
+  .calc {
+    border-radius: 0;
+    height: 100%;
+    padding: 0;
+    box-shadow: none;
+  }
+}
