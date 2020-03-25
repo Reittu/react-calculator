@@ -2,7 +2,7 @@
 
 ## Live demo
 
-[Demo](https://3pcsp.csb.app/)
+[Demo](https://3pcsp.codesandbox.io/)
 
 [Editor](https://codesandbox.io/s/react-calculator-3pcsp?fontsize=14&hidenavigation=1&theme=dark)
 
